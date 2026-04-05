@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Package_Box_Open
       objectReference: {fileID: 0}
+    - target: {fileID: 1886147566489046, guid: 7a22b1a6ac8514b94be5436867998358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4398157290923660, guid: 7a22b1a6ac8514b94be5436867998358, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -208,6 +212,10 @@ PrefabInstance:
     - target: {fileID: 6217671025392308296, guid: 460698866a9534f4aa6ef44a982bc591, type: 3}
       propertyPath: m_Name
       value: Coffee_Machine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217671025392308296, guid: 460698866a9534f4aa6ef44a982bc591, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6702001067289152242, guid: 460698866a9534f4aa6ef44a982bc591, type: 3}
       propertyPath: m_LocalPosition.x
@@ -416,7 +424,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5507859609076586298, guid: 07af4dd8d5a932a4695b417ade410839, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 810839995}
   m_SourcePrefab: {fileID: 100100000, guid: 07af4dd8d5a932a4695b417ade410839, type: 3}
 --- !u!4 &140053920 stripped
 Transform:
@@ -474,6 +485,10 @@ PrefabInstance:
     - target: {fileID: 6447284224268339947, guid: db77a5abc50086a419bb972f36676506, type: 3}
       propertyPath: m_Name
       value: Bed_Single_Modern
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447284224268339947, guid: db77a5abc50086a419bb972f36676506, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -665,6 +680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Headphones_Gaming_Microphone
       objectReference: {fileID: 0}
+    - target: {fileID: 5286593518170080712, guid: f4a686e270c26f246930b024884db10c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -686,6 +705,10 @@ PrefabInstance:
     - target: {fileID: 5138145399920907988, guid: c4a7f03c14135874390c0e86c8689072, type: 3}
       propertyPath: m_Name
       value: Rug_Checker
+      objectReference: {fileID: 0}
+    - target: {fileID: 5138145399920907988, guid: c4a7f03c14135874390c0e86c8689072, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5477939175957695598, guid: c4a7f03c14135874390c0e86c8689072, type: 3}
       propertyPath: m_LocalPosition.x
@@ -789,6 +812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Package_Box_Crashed
       objectReference: {fileID: 0}
+    - target: {fileID: 3084408282942329140, guid: ac43d0181d425284785c1498f4b398a9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -858,7 +885,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6204325519339145517, guid: 2e619ae9a62e8f745bb15d72efcd5727, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1279181897}
   m_SourcePrefab: {fileID: 100100000, guid: 2e619ae9a62e8f745bb15d72efcd5727, type: 3}
 --- !u!4 &357745846 stripped
 Transform:
@@ -1001,6 +1031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pc_Mouse_Gaming
       objectReference: {fileID: 0}
+    - target: {fileID: 3910059848093772930, guid: 1288e60e09f0f4a4aa6b400e00bdb382, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4397908091599189560, guid: 1288e60e09f0f4a4aa6b400e00bdb382, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -1060,6 +1094,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 682290818}
+  - component: {fileID: 682290819}
   m_Layer: 0
   m_Name: Furniture
   m_TagString: Untagged
@@ -1111,6 +1146,47 @@ Transform:
   - {fileID: 1566422320}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &682290819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682290817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
+--- !u!1 &810839994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5507859609076586298, guid: 07af4dd8d5a932a4695b417ade410839, type: 3}
+  m_PrefabInstance: {fileID: 140053919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &810839995
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810839994}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.345, y: 0.87, z: 0.345}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.91, z: -0.06}
+  m_TimeToStationary: 0.5
 --- !u!1 &830906443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,10 +1247,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 100
-  field of view: 60.000004
+  far clip plane: 5000
+  field of view: 48.6
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1198,8 +1274,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830906443}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.021307465, y: 0.008097595, z: -0.00018708238, w: -0.9997402}
-  m_LocalPosition: {x: 0.37706733, y: 1.513052, z: -2.3738775}
+  m_LocalRotation: {x: 0.043619387, y: 0, z: 0, w: 0.99904823}
+  m_LocalPosition: {x: 0, y: 1.6, z: -3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1292,6 +1368,10 @@ PrefabInstance:
     - target: {fileID: 4687740912451033295, guid: 846045678a763854c9335149241be9b7, type: 3}
       propertyPath: m_Name
       value: Cup_Plastic_Lid
+      objectReference: {fileID: 0}
+    - target: {fileID: 4687740912451033295, guid: 846045678a763854c9335149241be9b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5351933499429732981, guid: 846045678a763854c9335149241be9b7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1394,6 +1474,10 @@ PrefabInstance:
     - target: {fileID: 7979214109298170528, guid: af15a872c6fdefb40b2bc63bbbad56f7, type: 3}
       propertyPath: m_Name
       value: Library_Modern_Books
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979214109298170528, guid: af15a872c6fdefb40b2bc63bbbad56f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1535,6 +1619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cup_Plastic
       objectReference: {fileID: 0}
+    - target: {fileID: 9019550243169399550, guid: 8abfbcbdc14498d419619a2e73cb913a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1556,6 +1644,10 @@ PrefabInstance:
     - target: {fileID: 142118563029524581, guid: 85d71e7db3566be4c9974b292bf2c9ce, type: 3}
       propertyPath: m_Name
       value: Led_Panels_Pattern
+      objectReference: {fileID: 0}
+    - target: {fileID: 142118563029524581, guid: 85d71e7db3566be4c9974b292bf2c9ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 771022324604173023, guid: 85d71e7db3566be4c9974b292bf2c9ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1720,6 +1812,10 @@ PrefabInstance:
     - target: {fileID: 1129107320918186, guid: a4035beb20cf34d968adb926371400b0, type: 3}
       propertyPath: m_Name
       value: Pizza_Cheese_Slice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129107320918186, guid: a4035beb20cf34d968adb926371400b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4432550806728734, guid: a4035beb20cf34d968adb926371400b0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1923,6 +2019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pc_Monitor_Gaming
       objectReference: {fileID: 0}
+    - target: {fileID: 6044317654540018338, guid: b57b4ec2dc908dc4ba46b94636693417, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6389035902182275096, guid: b57b4ec2dc908dc4ba46b94636693417, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.0570718
@@ -2025,6 +2125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pc_Keyboard_Gaming
       objectReference: {fileID: 0}
+    - target: {fileID: 6626031183134220848, guid: aa50047f0e226b845989a0c796fcad3a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2122,6 +2226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water_Bottle_Crushed
       objectReference: {fileID: 0}
+    - target: {fileID: 6058122996208151412, guid: c3ebe9281a40ef8498e007640830a030, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2184,6 +2292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pot_Small_Circle_Cactus_A
       objectReference: {fileID: 0}
+    - target: {fileID: 5226317411999561625, guid: cc380a7e4b816ce43a08f8b203caa8b2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2194,6 +2306,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4885362513012354339, guid: cc380a7e4b816ce43a08f8b203caa8b2, type: 3}
   m_PrefabInstance: {fileID: 1188099944}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1279181896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6204325519339145517, guid: 2e619ae9a62e8f745bb15d72efcd5727, type: 3}
+  m_PrefabInstance: {fileID: 357745845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1279181897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279181896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshSurface
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 2c8b3a7ea726b554a85c41a269a83bd2, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &1303264899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2332,6 +2481,10 @@ PrefabInstance:
     - target: {fileID: 3914396329241940934, guid: 5ac287affbd844d4fa29eeb873ffa4d1, type: 3}
       propertyPath: m_Name
       value: Pc_Desktop_Gaming
+      objectReference: {fileID: 0}
+    - target: {fileID: 3914396329241940934, guid: 5ac287affbd844d4fa29eeb873ffa4d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4402666745941150076, guid: 5ac287affbd844d4fa29eeb873ffa4d1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2472,6 +2625,10 @@ PrefabInstance:
     - target: {fileID: 402661778081139808, guid: a8d6e72dde5183f41a8e2eb5a5eb6047, type: 3}
       propertyPath: m_Name
       value: Snow_Globe
+      objectReference: {fileID: 0}
+    - target: {fileID: 402661778081139808, guid: a8d6e72dde5183f41a8e2eb5a5eb6047, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1071111708125632218, guid: a8d6e72dde5183f41a8e2eb5a5eb6047, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2617,6 +2774,10 @@ PrefabInstance:
     - target: {fileID: 1994988570223070, guid: 400894f321100f24295b6c4d71518ace, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Poster_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994988570223070, guid: 400894f321100f24295b6c4d71518ace, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4752349649811962, guid: 400894f321100f24295b6c4d71518ace, type: 3}
       propertyPath: m_LocalScale.x
@@ -2826,6 +2987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelf_Modern
       objectReference: {fileID: 0}
+    - target: {fileID: 5626732413856558711, guid: 615d46a233e1056459b8044a6608c481, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2847,6 +3012,10 @@ PrefabInstance:
     - target: {fileID: 1532239710899790, guid: 5451f6ebd4ea6431c93e565d59ba4b8d, type: 3}
       propertyPath: m_Name
       value: Pizza_Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532239710899790, guid: 5451f6ebd4ea6431c93e565d59ba4b8d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4697439962254986, guid: 5451f6ebd4ea6431c93e565d59ba4b8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2909,6 +3078,10 @@ PrefabInstance:
     - target: {fileID: 2514740922574772996, guid: d33c488ac1f0fb44b929ed243cc8bac9, type: 3}
       propertyPath: m_Name
       value: Notebook_Opened
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514740922574772996, guid: d33c488ac1f0fb44b929ed243cc8bac9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3003328274383585726, guid: d33c488ac1f0fb44b929ed243cc8bac9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3090,6 +3263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelf_Modern
       objectReference: {fileID: 0}
+    - target: {fileID: 5626732413856558711, guid: 615d46a233e1056459b8044a6608c481, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3214,6 +3391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table_Gaming
       objectReference: {fileID: 0}
+    - target: {fileID: 4448268429799965627, guid: b06e17edea73e7c4cb283005035c8103, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3297,6 +3478,10 @@ PrefabInstance:
     - target: {fileID: 5944679067526282071, guid: 07d61397d577553488ad3d51879c865d, type: 3}
       propertyPath: m_Name
       value: Toy_Teddy_Bear_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 5944679067526282071, guid: 07d61397d577553488ad3d51879c865d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6427884274672394733, guid: 07d61397d577553488ad3d51879c865d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3426,6 +3611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Package_Box
       objectReference: {fileID: 0}
+    - target: {fileID: 1453520936786264, guid: 7b49ae5af64e047cf9c52dffe612a365, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4282249898540766, guid: 7b49ae5af64e047cf9c52dffe612a365, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.7283221
@@ -3487,6 +3676,10 @@ PrefabInstance:
     - target: {fileID: 6044317654540018338, guid: b57b4ec2dc908dc4ba46b94636693417, type: 3}
       propertyPath: m_Name
       value: Pc_Monitor_Gaming
+      objectReference: {fileID: 0}
+    - target: {fileID: 6044317654540018338, guid: b57b4ec2dc908dc4ba46b94636693417, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6389035902182275096, guid: b57b4ec2dc908dc4ba46b94636693417, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3582,6 +3775,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2078776495}
+  - component: {fileID: 2078776496}
   m_Layer: 0
   m_Name: VCam_BeatriceRoom
   m_TagString: Untagged
@@ -3598,12 +3792,55 @@ Transform:
   m_GameObject: {fileID: 2078776494}
   serializedVersion: 2
   m_LocalRotation: {x: 0.043619387, y: 0, z: 0, w: 0.99904823}
-  m_LocalPosition: {x: 0, y: 1.6, z: -2.8}
+  m_LocalPosition: {x: 0, y: 1.6, z: -3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2078776496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078776494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
+  Priority:
+    Enabled: 1
+    m_Value: 10
+  OutputChannel: 1
+  StandbyUpdate: 2
+  m_StreamingVersion: 20241001
+  m_LegacyPriority: 0
+  Target:
+    TrackingTarget: {fileID: 0}
+    LookAtTarget: {fileID: 0}
+    CustomLookAtTarget: 0
+  Lens:
+    FieldOfView: 48.6
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    ModeOverride: 0
+    PhysicalProperties:
+      GateFit: 2
+      SensorSize: {x: 21.946, y: 16.002}
+      LensShift: {x: 0, y: 0}
+      FocusDistance: 10
+      Iso: 200
+      ShutterSpeed: 0.005
+      Aperture: 16
+      BladeCount: 5
+      Curvature: {x: 2, y: 11}
+      BarrelClipping: 0.25
+      Anamorphism: 0
+  BlendHint: 0
 --- !u!1 &2091326717
 GameObject:
   m_ObjectHideFlags: 0
@@ -3653,6 +3890,10 @@ PrefabInstance:
     - target: {fileID: 355272459093203738, guid: 50d2709414e4987479748f18bf05641a, type: 3}
       propertyPath: m_Name
       value: Pinboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 355272459093203738, guid: 50d2709414e4987479748f18bf05641a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1127587415734256032, guid: 50d2709414e4987479748f18bf05641a, type: 3}
       propertyPath: m_LocalPosition.x
