@@ -1,0 +1,137 @@
+# ===========================
+# GRIMMORPG .gitignore
+# ===========================
+# Only track GRPG-owned files: _GRIMMORPG/, Documents/, ProjectSettings/, Packages/
+# All third-party assets are excluded and installed locally.
+
+# ===========================
+# Unity generated
+# ===========================
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]serSettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# ===========================
+# IDE / OS
+# ===========================
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+Thumbs.db
+.DS_Store
+
+# ===========================
+# Unity build artifacts
+# ===========================
+*.apk
+*.aab
+*.unitypackage
+*.app
+sysinfo.txt
+crashlytics-build.properties
+
+# ===========================
+# Local config (machine-specific)
+# ===========================
+.claude/
+.mcp.json
+.vsconfig
+
+# ===========================
+# Asset cache
+# ===========================
+Assets/DownloadCache/
+Assets/DownloadCache.meta
+Assets/Editor Default Resources/
+Assets/Editor Default Resources.meta
+
+# ===========================
+# Third-party assets (install locally, not tracked)
+# ===========================
+Assets/BodyPoser/
+Assets/BodyPoser.meta
+Assets/Flexalon/
+Assets/Flexalon.meta
+Assets/GDS/
+Assets/GDS.meta
+Assets/Ghost and Shaders PRO/
+Assets/Ghost and Shaders PRO.meta
+Assets/Gizmos/
+Assets/Gizmos.meta
+Assets/Ink/
+Assets/Ink.meta
+Assets/Kamgam/
+Assets/Kamgam.meta
+Assets/MegaBook/
+Assets/MegaBook.meta
+Assets/Plugins/
+Assets/Plugins.meta
+Assets/PolygonParticleFX/
+Assets/PolygonParticleFX.meta
+Assets/polyperfect/
+Assets/polyperfect.meta
+Assets/Resources/
+Assets/Resources.meta
+Assets/Synty/
+Assets/Synty.meta
+Assets/TextMesh Pro/
+Assets/TextMesh Pro.meta
+Assets/ThirdParty/
+Assets/ThirdParty.meta
+Assets/TutorialInfo/
+Assets/TutorialInfo.meta
+Assets/vFavorites/
+Assets/vFavorites.meta
+Assets/vFolders/
+Assets/vFolders.meta
+Assets/vHierarchy/
+Assets/vHierarchy.meta
+Assets/Voxel Labs/
+Assets/Voxel Labs.meta
+Assets/WarpedImagination/
+Assets/WarpedImagination.meta
+Assets/Wingman/
+Assets/Wingman.meta
+
+# Unity default scene/input (not GRPG-specific)
+Assets/Scenes/
+Assets/Scenes.meta
+Assets/Settings/
+Assets/Settings.meta
+Assets/Readme.asset
+Assets/Readme.asset.meta
+Assets/InputSystem_Actions.inputactions
+Assets/InputSystem_Actions.inputactions.meta
+
+# ===========================
+# Packages -- only track manifests, not local package contents
+# ===========================
+Packages/*/
+
+# ===========================
+# TRACKED (for clarity)
+# ===========================
+# .gitignore
+# Assets/_GRIMMORPG/    -- all GRPG code, art, audio, data, prefabs, scenes, UI
+# Documents/            -- GDD, status, dev reference
+# ProjectSettings/      -- Unity project configuration
+# Packages/manifest.json + packages-lock.json
