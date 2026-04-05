@@ -79,12 +79,29 @@ Standalone Unity 6 URP project at `E:\Unity\GRIMMORPG`. Previously a sub-project
 - DevReference updated with "Assets Before Custom Code" rule and full asset/Synty lookup tables
 - Setup phase complete -- ready to build custom systems
 
+### Session 4 -- April 5, 2026
+**Goal:** Build Phase 1 & 2 -- first playable with click-to-move and hotspot interactions
+
+- 6 scripts created: PlayerController, GameManager, CursorManager, InteractionManager, Hotspot, HotspotBarkTrigger
+- PlayerController: click-to-move via NavMeshAgent + Animancer (Synty feminine idle/walk clips)
+- CursorManager: 5 cursor types using Synty DarkFantasyHUD sprites
+- Hotspot + InteractionManager: raycast detection, verb selection (Look/Use/Talk), cursor feedback
+- HotspotBarkTrigger: Dialogue System bark bridge with sample lines for 11 hotspots
+- Bootstrap scene: GameManager + CursorManager + InteractionManager + DialogueSystemController
+- BeatriceRoom: NavMesh baked, Cinemachine VCam, 13 hotspots on furniture, Beatrice fully wired
+- Fixed Input System compatibility (switched to "Both" for DS legacy GUIRoot)
+- Created GRIMMORPG_DialogueDB with Beatrice + Narrator actors
+- First playtest: click-to-move works, hotspots respond, barks fire, cursor changes on hover
+- Camera pulled back to Z=-3.5 for better room framing
+- Chair_Gaming: NavMeshObstacle added (dynamic, for future sit interaction)
+
 ---
 
 ## Known Issues
 
 | Issue | Severity | Notes |
 |-------|----------|-------|
+| Furniture NavMesh carving | Medium | Beatrice walks through desk/boxes -- needs Unity 6 NavMeshSurface approach |
 | AC still imported | Low | Needs removal -- no longer used |
 
 ---
