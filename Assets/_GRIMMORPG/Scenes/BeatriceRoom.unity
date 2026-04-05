@@ -118,7 +118,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 3f043804b9bd87740947c8f6239b2a5d, type: 2}
 --- !u!1001 &101429409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -252,13 +252,115 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6217671025392308296, guid: 460698866a9534f4aa6ef44a982bc591, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 108127847}
+    - targetCorrespondingSourceObject: {fileID: 6217671025392308296, guid: 460698866a9534f4aa6ef44a982bc591, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 108127846}
+    - targetCorrespondingSourceObject: {fileID: 6217671025392308296, guid: 460698866a9534f4aa6ef44a982bc591, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 108127848}
   m_SourcePrefab: {fileID: 100100000, guid: 460698866a9534f4aa6ef44a982bc591, type: 3}
 --- !u!4 &108127844 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6702001067289152242, guid: 460698866a9534f4aa6ef44a982bc591, type: 3}
   m_PrefabInstance: {fileID: 108127843}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &108127845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6217671025392308296, guid: 460698866a9534f4aa6ef44a982bc591, type: 3}
+  m_PrefabInstance: {fileID: 108127843}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &108127846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108127845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59861a91b7674f4a862998b554f1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.Hotspot
+  _displayName: Coffee Machine
+  _description: 
+  _canLook: 1
+  _canUse: 1
+  _canTalk: 0
+  _hoverCursor: 2
+  _onLook:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 108127848}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkLookDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onUse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 108127848}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkUseDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onTalk:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &108127847
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108127845}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3408626, y: 0.52119684, z: 0.32000014}
+  m_Center: {x: 0.000000007450584, y: 0.26060355, z: -0.009883468}
+--- !u!114 &108127848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108127845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4df62aba472c334d82585683a74e6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.HotspotBarkTrigger
+  _lookBark: The lifeblood of late-night coding sessions.
+  _useBark: Coffee. Always coffee.
+  _talkConversation: 
+  _barkSource: {fileID: 1583868898}
 --- !u!1001 &140053919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -376,13 +478,79 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6447284224268339947, guid: db77a5abc50086a419bb972f36676506, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 201414182}
+    - targetCorrespondingSourceObject: {fileID: 6447284224268339947, guid: db77a5abc50086a419bb972f36676506, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 201414183}
   m_SourcePrefab: {fileID: 100100000, guid: db77a5abc50086a419bb972f36676506, type: 3}
 --- !u!4 &201414180 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5922948722371514449, guid: db77a5abc50086a419bb972f36676506, type: 3}
   m_PrefabInstance: {fileID: 201414179}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &201414181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6447284224268339947, guid: db77a5abc50086a419bb972f36676506, type: 3}
+  m_PrefabInstance: {fileID: 201414179}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &201414182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201414181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59861a91b7674f4a862998b554f1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.Hotspot
+  _displayName: Bed
+  _description: 
+  _canLook: 1
+  _canUse: 0
+  _canTalk: 0
+  _hoverCursor: 1
+  _onLook:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 201414183}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkLookDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onUse:
+    m_PersistentCalls:
+      m_Calls: []
+  _onTalk:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &201414183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201414181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4df62aba472c334d82585683a74e6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.HotspotBarkTrigger
+  _lookBark: Sleep? What's that? The game ships next week.
+  _useBark: 
+  _talkConversation: 
+  _barkSource: {fileID: 1583868898}
 --- !u!1001 &277477934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -642,6 +810,10 @@ PrefabInstance:
     - target: {fileID: 6204325519339145517, guid: 2e619ae9a62e8f745bb15d72efcd5727, type: 3}
       propertyPath: m_Name
       value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204325519339145517, guid: 2e619ae9a62e8f745bb15d72efcd5727, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6724403780947383191, guid: 2e619ae9a62e8f745bb15d72efcd5727, type: 3}
       propertyPath: m_LocalPosition.x
@@ -951,6 +1123,7 @@ GameObject:
   - component: {fileID: 830906445}
   - component: {fileID: 830906444}
   - component: {fileID: 830906447}
+  - component: {fileID: 830906448}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1076,6 +1249,38 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &830906448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830906443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineBrain
+  ShowDebugText: 0
+  ShowCameraFrustum: 1
+  IgnoreTimeScale: 0
+  WorldUpOverride: {fileID: 0}
+  ChannelMask: -1
+  UpdateMethod: 2
+  BlendUpdateMethod: 1
+  LensModeOverride:
+    Enabled: 0
+    DefaultMode: 2
+  DefaultBlend:
+    Style: 1
+    Time: 2
+    CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  CustomBlends: {fileID: 0}
 --- !u!1001 &883589250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1193,13 +1398,91 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7979214109298170528, guid: af15a872c6fdefb40b2bc63bbbad56f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 898453760}
+    - targetCorrespondingSourceObject: {fileID: 7979214109298170528, guid: af15a872c6fdefb40b2bc63bbbad56f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 898453761}
   m_SourcePrefab: {fileID: 100100000, guid: af15a872c6fdefb40b2bc63bbbad56f7, type: 3}
 --- !u!4 &898453758 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7345384566236954650, guid: af15a872c6fdefb40b2bc63bbbad56f7, type: 3}
   m_PrefabInstance: {fileID: 898453757}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &898453759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7979214109298170528, guid: af15a872c6fdefb40b2bc63bbbad56f7, type: 3}
+  m_PrefabInstance: {fileID: 898453757}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &898453760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898453759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59861a91b7674f4a862998b554f1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.Hotspot
+  _displayName: Bookshelf
+  _description: 
+  _canLook: 1
+  _canUse: 1
+  _canTalk: 0
+  _hoverCursor: 1
+  _onLook:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 898453761}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkLookDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onUse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 898453761}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkUseDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onTalk:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &898453761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898453759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4df62aba472c334d82585683a74e6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.HotspotBarkTrigger
+  _lookBark: Programming manuals, manga, and... one book that doesn't belong.
+  _useBark: Nothing useful here. Yet.
+  _talkConversation: 
+  _barkSource: {fileID: 1583868898}
 --- !u!1001 &919576474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1317,13 +1600,115 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 142118563029524581, guid: 85d71e7db3566be4c9974b292bf2c9ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1011280876}
+    - targetCorrespondingSourceObject: {fileID: 142118563029524581, guid: 85d71e7db3566be4c9974b292bf2c9ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1011280875}
+    - targetCorrespondingSourceObject: {fileID: 142118563029524581, guid: 85d71e7db3566be4c9974b292bf2c9ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1011280877}
   m_SourcePrefab: {fileID: 100100000, guid: 85d71e7db3566be4c9974b292bf2c9ce, type: 3}
 --- !u!4 &1011280873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 771022324604173023, guid: 85d71e7db3566be4c9974b292bf2c9ce, type: 3}
   m_PrefabInstance: {fileID: 1011280872}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1011280874 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 142118563029524581, guid: 85d71e7db3566be4c9974b292bf2c9ce, type: 3}
+  m_PrefabInstance: {fileID: 1011280872}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1011280875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011280874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59861a91b7674f4a862998b554f1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.Hotspot
+  _displayName: LED Panels
+  _description: 
+  _canLook: 1
+  _canUse: 1
+  _canTalk: 0
+  _hoverCursor: 2
+  _onLook:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1011280877}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkLookDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onUse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1011280877}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkUseDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onTalk:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &1011280876
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011280874}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8545366, y: 0.53841174, z: 0.020000042}
+  m_Center: {x: -0.0101953745, y: 0.030317187, z: 0.009994508}
+--- !u!114 &1011280877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011280874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4df62aba472c334d82585683a74e6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.HotspotBarkTrigger
+  _lookBark: RGB everything. Obviously.
+  _useBark: The patterns shift when I'm not looking. I think.
+  _talkConversation: 
+  _barkSource: {fileID: 1583868898}
 --- !u!1001 &1040546229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1441,13 +1826,91 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 70943891980160407, guid: 59e2e3212b6a7884a9b927f1793144c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1075594478}
+    - targetCorrespondingSourceObject: {fileID: 70943891980160407, guid: 59e2e3212b6a7884a9b927f1793144c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1075594479}
   m_SourcePrefab: {fileID: 100100000, guid: 59e2e3212b6a7884a9b927f1793144c8, type: 3}
 --- !u!4 &1075594476 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 844385023758325549, guid: 59e2e3212b6a7884a9b927f1793144c8, type: 3}
   m_PrefabInstance: {fileID: 1075594475}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1075594477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 70943891980160407, guid: 59e2e3212b6a7884a9b927f1793144c8, type: 3}
+  m_PrefabInstance: {fileID: 1075594475}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1075594478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075594477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59861a91b7674f4a862998b554f1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.Hotspot
+  _displayName: Door
+  _description: Exit to the hallway
+  _canLook: 1
+  _canUse: 1
+  _canTalk: 0
+  _hoverCursor: 2
+  _onLook:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1075594479}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkLookDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onUse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1075594479}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkUseDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onTalk:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1075594479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075594477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4df62aba472c334d82585683a74e6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.HotspotBarkTrigger
+  _lookBark: The door to the hallway.
+  _useBark: I should focus on the code first.
+  _talkConversation: 
+  _barkSource: {fileID: 1583868898}
 --- !u!1001 &1111814230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1565,13 +2028,48 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6626031183134220848, guid: aa50047f0e226b845989a0c796fcad3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1148323512}
   m_SourcePrefab: {fileID: 100100000, guid: aa50047f0e226b845989a0c796fcad3a, type: 3}
 --- !u!4 &1148323510 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5818568176401660042, guid: aa50047f0e226b845989a0c796fcad3a, type: 3}
   m_PrefabInstance: {fileID: 1148323509}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1148323511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6626031183134220848, guid: aa50047f0e226b845989a0c796fcad3a, type: 3}
+  m_PrefabInstance: {fileID: 1148323509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1148323512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148323511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59861a91b7674f4a862998b554f1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.Hotspot
+  _displayName: Keyboard
+  _description: 
+  _canLook: 1
+  _canUse: 1
+  _canTalk: 0
+  _hoverCursor: 2
+  _onLook:
+    m_PersistentCalls:
+      m_Calls: []
+  _onUse:
+    m_PersistentCalls:
+      m_Calls: []
+  _onTalk:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1175098423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1878,13 +2376,91 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3914396329241940934, guid: 5ac287affbd844d4fa29eeb873ffa4d1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1556803360}
+    - targetCorrespondingSourceObject: {fileID: 3914396329241940934, guid: 5ac287affbd844d4fa29eeb873ffa4d1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1556803361}
   m_SourcePrefab: {fileID: 100100000, guid: 5ac287affbd844d4fa29eeb873ffa4d1, type: 3}
 --- !u!4 &1556803358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4402666745941150076, guid: 5ac287affbd844d4fa29eeb873ffa4d1, type: 3}
   m_PrefabInstance: {fileID: 1556803357}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1556803359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3914396329241940934, guid: 5ac287affbd844d4fa29eeb873ffa4d1, type: 3}
+  m_PrefabInstance: {fileID: 1556803357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1556803360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556803359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59861a91b7674f4a862998b554f1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.Hotspot
+  _displayName: Gaming PC
+  _description: 
+  _canLook: 1
+  _canUse: 1
+  _canTalk: 0
+  _hoverCursor: 2
+  _onLook:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1556803361}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkLookDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onUse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1556803361}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkUseDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onTalk:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1556803361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556803359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4df62aba472c334d82585683a74e6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.HotspotBarkTrigger
+  _lookBark: My rig. It's seen better days... and cleaner desktops.
+  _useBark: I should check my build status.
+  _talkConversation: 
+  _barkSource: {fileID: 1583868898}
 --- !u!1001 &1566422319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1940,12 +2516,95 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 402661778081139808, guid: a8d6e72dde5183f41a8e2eb5a5eb6047, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1566422322}
+    - targetCorrespondingSourceObject: {fileID: 402661778081139808, guid: a8d6e72dde5183f41a8e2eb5a5eb6047, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1566422323}
   m_SourcePrefab: {fileID: 100100000, guid: a8d6e72dde5183f41a8e2eb5a5eb6047, type: 3}
 --- !u!4 &1566422320 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1071111708125632218, guid: a8d6e72dde5183f41a8e2eb5a5eb6047, type: 3}
   m_PrefabInstance: {fileID: 1566422319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1566422321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 402661778081139808, guid: a8d6e72dde5183f41a8e2eb5a5eb6047, type: 3}
+  m_PrefabInstance: {fileID: 1566422319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1566422322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566422321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59861a91b7674f4a862998b554f1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.Hotspot
+  _displayName: Snow Globe
+  _description: 
+  _canLook: 1
+  _canUse: 1
+  _canTalk: 0
+  _hoverCursor: 2
+  _onLook:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1566422323}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkLookDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onUse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1566422323}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkUseDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onTalk:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1566422323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566422321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4df62aba472c334d82585683a74e6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.HotspotBarkTrigger
+  _lookBark: A snow globe from a place I've never been.
+  _useBark: The snow inside moves on its own sometimes.
+  _talkConversation: 
+  _barkSource: {fileID: 1583868898}
+--- !u!4 &1583868898 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8221816129970946965, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+  m_PrefabInstance: {fileID: 7872578323683279218}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1625039426
 PrefabInstance:
@@ -2018,114 +2677,103 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1994988570223070, guid: 400894f321100f24295b6c4d71518ace, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1625039430}
+    - targetCorrespondingSourceObject: {fileID: 1994988570223070, guid: 400894f321100f24295b6c4d71518ace, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1625039429}
+    - targetCorrespondingSourceObject: {fileID: 1994988570223070, guid: 400894f321100f24295b6c4d71518ace, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1625039431}
   m_SourcePrefab: {fileID: 100100000, guid: 400894f321100f24295b6c4d71518ace, type: 3}
 --- !u!4 &1625039427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4752349649811962, guid: 400894f321100f24295b6c4d71518ace, type: 3}
   m_PrefabInstance: {fileID: 1625039426}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1664854815
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2244887490008050321, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: b178d123d3fea4a4faaa295e7df2f656, type: 2}
-    - target: {fileID: 3644607894385718271, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.6647808
-      objectReference: {fileID: 0}
-    - target: {fileID: 3644607894385718271, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.009999945
-      objectReference: {fileID: 0}
-    - target: {fileID: 3644607894385718271, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.0721351
-      objectReference: {fileID: 0}
-    - target: {fileID: 3644607894385718271, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3644607894385718271, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3644607894385718271, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3644607894385718271, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3644607894385718271, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3644607894385718271, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3644607894385718271, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6828984028559791885, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      propertyPath: m_Name
-      value: SyntyWomanComboMesh
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6828984028559791885, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1664854817}
-    - targetCorrespondingSourceObject: {fileID: 6828984028559791885, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1664854818}
-  m_SourcePrefab: {fileID: 100100000, guid: 601177849d1010b418b7b67145d76d03, type: 3}
---- !u!1 &1664854816 stripped
+--- !u!1 &1625039428 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6828984028559791885, guid: 601177849d1010b418b7b67145d76d03, type: 3}
-  m_PrefabInstance: {fileID: 1664854815}
+  m_CorrespondingSourceObject: {fileID: 1994988570223070, guid: 400894f321100f24295b6c4d71518ace, type: 3}
+  m_PrefabInstance: {fileID: 1625039426}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1664854817
+--- !u!114 &1625039429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664854816}
+  m_GameObject: {fileID: 1625039428}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 956373788f9dd55489810c0d6e6d9918, type: 3}
+  m_Script: {fileID: 11500000, guid: c59861a91b7674f4a862998b554f1538, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ExpressionSwitcher
-  _emotionText: {fileID: 0}
-  _cycleButton: {fileID: 0}
-  _transitionTimeSlider: {fileID: 0}
---- !u!114 &1664854818
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.Hotspot
+  _displayName: Poster
+  _description: 
+  _canLook: 1
+  _canUse: 0
+  _canTalk: 0
+  _hoverCursor: 1
+  _onLook:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1625039431}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkLookDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onUse:
+    m_PersistentCalls:
+      m_Calls: []
+  _onTalk:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &1625039430
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625039428}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9461179, y: 1.1624287, z: 0.28793675}
+  m_Center: {x: 0.021173364, y: 0.18362968, z: 0.14375198}
+--- !u!114 &1625039431
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664854816}
+  m_GameObject: {fileID: 1625039428}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2986573c2c669ad4c86fcd0d690032b9, type: 3}
+  m_Script: {fileID: 11500000, guid: d4df62aba472c334d82585683a74e6a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RevolvingGear.BodyPoser.BodyPoser
-  turnOffPhysics: 0
-  poseEditMode: 0
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.HotspotBarkTrigger
+  _lookBark: A poster from my favorite horror game. Ironic.
+  _useBark: 
+  _talkConversation: 
+  _barkSource: {fileID: 1583868898}
 --- !u!1001 &1690221504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2305,13 +2953,91 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2514740922574772996, guid: d33c488ac1f0fb44b929ed243cc8bac9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1713108429}
+    - targetCorrespondingSourceObject: {fileID: 2514740922574772996, guid: d33c488ac1f0fb44b929ed243cc8bac9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1713108430}
   m_SourcePrefab: {fileID: 100100000, guid: d33c488ac1f0fb44b929ed243cc8bac9, type: 3}
 --- !u!4 &1713108427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3003328274383585726, guid: d33c488ac1f0fb44b929ed243cc8bac9, type: 3}
   m_PrefabInstance: {fileID: 1713108426}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1713108428 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2514740922574772996, guid: d33c488ac1f0fb44b929ed243cc8bac9, type: 3}
+  m_PrefabInstance: {fileID: 1713108426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1713108429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713108428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59861a91b7674f4a862998b554f1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.Hotspot
+  _displayName: Notebook
+  _description: 
+  _canLook: 1
+  _canUse: 1
+  _canTalk: 0
+  _hoverCursor: 2
+  _onLook:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1713108430}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkLookDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onUse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1713108430}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkUseDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onTalk:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1713108430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713108428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4df62aba472c334d82585683a74e6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.HotspotBarkTrigger
+  _lookBark: Gran's notebook. The handwriting is... unsettling.
+  _useBark: I need to study this more carefully.
+  _talkConversation: 
+  _barkSource: {fileID: 1583868898}
 --- !u!1001 &1732951182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2615,13 +3341,79 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5944679067526282071, guid: 07d61397d577553488ad3d51879c865d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1961590360}
+    - targetCorrespondingSourceObject: {fileID: 5944679067526282071, guid: 07d61397d577553488ad3d51879c865d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1961590361}
   m_SourcePrefab: {fileID: 100100000, guid: 07d61397d577553488ad3d51879c865d, type: 3}
 --- !u!4 &1961590358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6427884274672394733, guid: 07d61397d577553488ad3d51879c865d, type: 3}
   m_PrefabInstance: {fileID: 1961590357}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1961590359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5944679067526282071, guid: 07d61397d577553488ad3d51879c865d, type: 3}
+  m_PrefabInstance: {fileID: 1961590357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1961590360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961590359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59861a91b7674f4a862998b554f1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.Hotspot
+  _displayName: Teddy Bear
+  _description: 
+  _canLook: 1
+  _canUse: 1
+  _canTalk: 0
+  _hoverCursor: 1
+  _onLook:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1961590361}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkLookDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onUse:
+    m_PersistentCalls:
+      m_Calls: []
+  _onTalk:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1961590361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961590359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4df62aba472c334d82585683a74e6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.HotspotBarkTrigger
+  _lookBark: Mr. Patches. Had him since... well, since always.
+  _useBark: 
+  _talkConversation: 
+  _barkSource: {fileID: 1583868898}
 --- !u!1001 &1962675199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2739,13 +3531,79 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6044317654540018338, guid: b57b4ec2dc908dc4ba46b94636693417, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2063068227}
   m_SourcePrefab: {fileID: 100100000, guid: b57b4ec2dc908dc4ba46b94636693417, type: 3}
 --- !u!4 &2063068225 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6389035902182275096, guid: b57b4ec2dc908dc4ba46b94636693417, type: 3}
   m_PrefabInstance: {fileID: 2063068224}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2063068226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6044317654540018338, guid: b57b4ec2dc908dc4ba46b94636693417, type: 3}
+  m_PrefabInstance: {fileID: 2063068224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2063068227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063068226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59861a91b7674f4a862998b554f1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.Hotspot
+  _displayName: Monitor
+  _description: 
+  _canLook: 1
+  _canUse: 1
+  _canTalk: 0
+  _hoverCursor: 2
+  _onLook:
+    m_PersistentCalls:
+      m_Calls: []
+  _onUse:
+    m_PersistentCalls:
+      m_Calls: []
+  _onTalk:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &2078776494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2078776495}
+  m_Layer: 0
+  m_Name: VCam_BeatriceRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2078776495
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078776494}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.043619387, y: 0, z: 0, w: 0.99904823}
+  m_LocalPosition: {x: 0, y: 1.6, z: -2.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2091326717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,13 +3697,259 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 355272459093203738, guid: 50d2709414e4987479748f18bf05641a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2104244381}
+    - targetCorrespondingSourceObject: {fileID: 355272459093203738, guid: 50d2709414e4987479748f18bf05641a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2104244382}
   m_SourcePrefab: {fileID: 100100000, guid: 50d2709414e4987479748f18bf05641a, type: 3}
 --- !u!4 &2104244379 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1127587415734256032, guid: 50d2709414e4987479748f18bf05641a, type: 3}
   m_PrefabInstance: {fileID: 2104244378}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2104244380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 355272459093203738, guid: 50d2709414e4987479748f18bf05641a, type: 3}
+  m_PrefabInstance: {fileID: 2104244378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2104244381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104244380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59861a91b7674f4a862998b554f1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.Hotspot
+  _displayName: Pinboard
+  _description: 
+  _canLook: 1
+  _canUse: 0
+  _canTalk: 0
+  _hoverCursor: 1
+  _onLook:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2104244382}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: BarkLookDescription
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onUse:
+    m_PersistentCalls:
+      m_Calls: []
+  _onTalk:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2104244382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104244380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4df62aba472c334d82585683a74e6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.HotspotBarkTrigger
+  _lookBark: Release schedule, bug tracker printouts, and a photo of... someone.
+  _useBark: 
+  _talkConversation: 
+  _barkSource: {fileID: 1583868898}
+--- !u!1001 &7872578323683279218
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1618398421648365323, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401948891033077684, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      propertyPath: m_Name
+      value: Beatrice
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401948891033077684, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221816129970946965, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221816129970946965, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221816129970946965, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221816129970946965, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.00000004371139
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221816129970946965, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221816129970946965, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221816129970946965, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221816129970946965, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221816129970946965, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221816129970946965, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2693997926835454440, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7401948891033077684, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7872578323683279223}
+    - targetCorrespondingSourceObject: {fileID: 7401948891033077684, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7872578323683279222}
+    - targetCorrespondingSourceObject: {fileID: 7401948891033077684, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7872578323683279221}
+    - targetCorrespondingSourceObject: {fileID: 7401948891033077684, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7872578323683279220}
+  m_SourcePrefab: {fileID: 100100000, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+--- !u!1 &7872578323683279219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7401948891033077684, guid: 0309d2616e418f046a745e3ae3e5a55a, type: 3}
+  m_PrefabInstance: {fileID: 7872578323683279218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7872578323683279220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7872578323683279219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffb4240e48ee6c4449662aa9fb7dbd04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GRIMMORPG.PlayerController
+  _idleClip:
+    _FadeDuration: 0.2
+    _Speed: 1
+    _Events:
+      _NormalizedTimes: []
+      _Callbacks: []
+      _Names: []
+    _Clip: {fileID: 3215575822887921774, guid: ed8560f44bf9d4b48b00a743e934cf99, type: 3}
+    _NormalizedStartTime: NaN
+  _walkClip:
+    _FadeDuration: 0.2
+    _Speed: 1
+    _Events:
+      _NormalizedTimes: []
+      _Callbacks: []
+      _Names: []
+    _Clip: {fileID: 6048701035611563356, guid: 6f2f17a5242e38648b83ee303844b46c, type: 3}
+    _NormalizedStartTime: NaN
+  _stoppingDistance: 0.15
+  _rotationSpeed: 10
+  _walkableMask:
+    serializedVersion: 2
+    m_Bits: 1
+  references:
+    version: 2
+    RefIds: []
+--- !u!95 &7872578323683279221
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7872578323683279219}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: f00335ac2590ba842bce228f15572961, type: 2}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!195 &7872578323683279222
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7872578323683279219}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.25
+  m_Speed: 1.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 360
+  m_StoppingDistance: 0.15
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.8
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &7872578323683279223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7872578323683279219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad50f81b1d25c441943c37a89ba23f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Kybernetik.Animancer::Animancer.AnimancerComponent
+  _Animator: {fileID: 0}
+  _Transitions: {fileID: 0}
+  _ActionOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2854,4 +3958,5 @@ SceneRoots:
   - {fileID: 1303264901}
   - {fileID: 682290818}
   - {fileID: 2091326718}
-  - {fileID: 1664854815}
+  - {fileID: 7872578323683279218}
+  - {fileID: 2078776495}

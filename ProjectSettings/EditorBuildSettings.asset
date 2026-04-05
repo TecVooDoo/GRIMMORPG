@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/_GRIMMORPG/Scenes/Bootstrap.unity
+    guid: 84126c84e3c7d1449937109f060a5d62
+  - enabled: 1
+    path: Assets/_GRIMMORPG/Scenes/BeatriceRoom.unity
+    guid: 9c1c5e9edb2f6dd49b92e5ae8ff87a99
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
