@@ -67,6 +67,8 @@ Assets/Editor Default Resources.meta
 # ===========================
 # Third-party assets (install locally, not tracked)
 # ===========================
+Assets/AssetInventory/
+Assets/AssetInventory.meta
 Assets/BodyPoser/
 Assets/BodyPoser.meta
 Assets/Flexalon/

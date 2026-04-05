@@ -114,7 +114,7 @@ AC was evaluated in VNPC project (Sessions 6-9) and dropped. Two sessions of set
 - Game bootstrap / manager
 
 ### Engine
-- 2.5D camera perspective (fixed cameras, 3D geometry)
+- Fixed-camera 3D perspective (pre-positioned cameras, full 3D geometry)
 - Point And Click movement
 - Mouse And Keyboard input
 - Verb-first interaction (select action, then click target)
@@ -138,7 +138,7 @@ AC was evaluated in VNPC project (Sessions 6-9) and dropped. Two sessions of set
 | # | Decision | Status | Notes |
 |---|----------|--------|-------|
 | 1 | Stack: Modular (no Adventure Creator) | Locked | AC dropped after practical eval -- modular alternatives are superior in every domain |
-| 2 | 2.5D perspective, point-and-click | Locked | Fixed cameras, 3D geometry (Grim Fandango approach) |
+| 2 | Fixed-camera 3D, point-and-click | Locked | Pre-positioned cameras, 3D geometry (Grim Fandango approach) |
 | 3 | Protagonist is Beatrice (was Mary) | Locked | Dante's Beatrice parallel |
 | 4 | Tech vs Magic as core mechanic | Proposed | Casting glitches tech -- player must choose approach |
 | 5 | Grimoire pages as collectible spine | Proposed | Each page = counter-spell to patch into MMORPG |
