@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace GRIMMORPG
 {
@@ -50,7 +51,14 @@ namespace GRIMMORPG
 
         private void UpdateHotspotDetection()
         {
-            Ray ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
+            if (_mainCamera == null)
+            {
+                _mainCamera = Camera.main;
+                if (_mainCamera == null) return;
+            }
+
+            Vector2 mousePos = Mouse.current.position.ReadValue();
+            Ray ray = _mainCamera.ScreenPointToRay(mousePos);
 
             if (Physics.Raycast(ray, out RaycastHit hit, _maxRayDistance, _interactableMask))
             {
@@ -77,7 +85,7 @@ namespace GRIMMORPG
             if (_currentHotspot == null)
                 return;
 
-            if (!Input.GetMouseButtonDown(0))
+            if (!Mouse.current.leftButton.wasPressedThisFrame)
                 return;
 
             // If a verb is pre-selected, use it. Otherwise use default action.

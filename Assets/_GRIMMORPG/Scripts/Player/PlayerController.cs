@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.InputSystem;
 using Animancer;
 
 namespace GRIMMORPG
@@ -50,14 +51,15 @@ namespace GRIMMORPG
 
         private void HandleClickInput()
         {
-            if (!Input.GetMouseButtonDown(0))
+            if (!Mouse.current.leftButton.wasPressedThisFrame)
                 return;
 
             // Don't move if clicking on a hotspot — InteractionManager handles those
             if (InteractionManager.Instance != null && InteractionManager.Instance.CurrentHotspot != null)
                 return;
 
-            Ray ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
+            Vector2 mousePos = Mouse.current.position.ReadValue();
+            Ray ray = _mainCamera.ScreenPointToRay(mousePos);
 
             if (Physics.Raycast(ray, out RaycastHit hit, 100f, _walkableMask))
             {

@@ -30,6 +30,7 @@ namespace GRIMMORPG
 
         private void Start()
         {
+            Debug.Log($"[GameManager] Starting. Loading first scene: {_firstSceneName}");
             LoadScene(_firstSceneName);
         }
 
@@ -44,11 +45,27 @@ namespace GRIMMORPG
                 }
             }
 
-            SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive).completed += operation =>
+            AsyncOperation loadOp = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+
+            if (loadOp == null)
+            {
+                Debug.LogError($"[GameManager] Failed to load scene '{sceneName}'. Is it in Build Settings?");
+                return;
+            }
+
+            loadOp.completed += operation =>
             {
                 CurrentSceneName = sceneName;
                 Scene loadedScene = SceneManager.GetSceneByName(sceneName);
-                SceneManager.SetActiveScene(loadedScene);
+                if (loadedScene.IsValid())
+                {
+                    SceneManager.SetActiveScene(loadedScene);
+                    Debug.Log($"[GameManager] Scene '{sceneName}' loaded and set active.");
+                }
+                else
+                {
+                    Debug.LogError($"[GameManager] Scene '{sceneName}' loaded but not valid.");
+                }
             };
         }
     }
